@@ -1,8 +1,11 @@
-# Initialize instruction memory with zeros
+# Initialize instruction/data/registers memory with zeros
 zeros32 = "0" * 32 + "\n"
 with open("instruction.mem", 'wb') as instruction_file:
     instruction_file.write(bytes(zeros32 * 256, 'utf-8'))
-
+with open("registers.mem", 'wb') as instruction_file:
+    instruction_file.write(bytes(zeros32 * 256, 'utf-8'))
+with open("data.mem", 'wb') as instruction_file:
+    instruction_file.write(bytes(zeros32 * 256, 'utf-8'))
 
 opcodes = {
     "add": 0,
