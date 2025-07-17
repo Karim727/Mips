@@ -4,20 +4,8 @@
 <img width="979" height="607" alt="image" src="https://github.com/user-attachments/assets/87786616-d67d-4c25-bd24-7116751f7331" />
 
 ## Supported Instructions
-| Instruction | Example |
-|----------|----------|
-| add    | add $11, $10, $9
-    |
-| and    |     |
-| or     |     |
-| nor    |      |
-| sub    |    |  
-| slt    |    |
-| addi   |      |
-| lw     |    |
-| sw     |      |
-| lui    |      |
-| beq    |      |
+*add, or, nor, sub, slt, addi, lw, sw, lui, beq *
+
 ## Registers 
 | Register | Name   | Register | Name   | Register | Name   | Register | Name   |
 |----------|--------|----------|--------|----------|--------|----------|--------|
