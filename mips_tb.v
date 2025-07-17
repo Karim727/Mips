@@ -10,7 +10,7 @@ module mips_tb;
         forever #5 clk = ~clk; 
     end
 
-    // Stop simulation after enough time
+    
     initial begin
         #5000;
 
