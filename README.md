@@ -20,13 +20,13 @@
 
 ## Usage
 ### Requirements
-> iverilog
-> python
-> bash terminal
+* iverilog
+* python
+* bash terminal
 ### How to run
 1. Write down your assembly code in ```test.asm```
 2. edit .mem files for changing any initial values, defaults are zeros
-3. ```python3/python assembler.py``` to generate the machine code
+3. ```python assembler.py``` to generate the machine code.
 4. ```iverilog -o mips_sim```
 5. ```vvp mips_sim```
    
