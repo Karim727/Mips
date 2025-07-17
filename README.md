@@ -4,7 +4,7 @@
 <img width="979" height="607" alt="image" src="https://github.com/user-attachments/assets/87786616-d67d-4c25-bd24-7116751f7331" />
 
 ## Supported Instructions
-*add, or, nor, sub, slt, addi, lw, sw, lui, beq *
+**add, or, nor, sub, slt, addi, lw, sw, lui, beq**
 
 ## Registers 
 | Register | Name   | Register | Name   | Register | Name   | Register | Name   |
@@ -17,4 +17,17 @@
 | $5       | $a1    | $13      | $t5    | $21      | $s5    | $29      | $sp    |
 | $6       | $a2    | $14      | $t6    | $22      | $s6    | $30      | $fp    |
 | $7       | $a3    | $15      | $t7    | $23      | $s7    | $31      | $ra    |
+
+## Usage
+### Requirements
+> iverilog
+> python
+> bash terminal
+### How to run
+1. Write down your assembly code in test.asm
+2. python3/python assembler.py
+3. iverilog -o mips_sim
+4. vvp mips_sim
+   
+
 
