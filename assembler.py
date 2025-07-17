@@ -3,7 +3,7 @@ zeros32 = "0" * 32 + "\n"
 with open("instruction.mem", 'wb') as instruction_file:
     instruction_file.write(bytes(zeros32 * 256, 'utf-8'))
 
-# Define opcodes and funct codes from the table
+
 opcodes = {
     "add": 0,
     "sub": 0,
@@ -33,7 +33,7 @@ functs = {
     "sra": 3
 }
 
-# Helper functions
+
 def reg_to_5bit(reg):
     """Convert register name to 5-bit binary string"""
     return "{:05b}".format(int(reg[1:]))
@@ -54,7 +54,6 @@ def int_to_6bit(value):
     """Convert integer to 6-bit binary string"""
     return "{:06b}".format(int(value))
 
-# Parse assembly from test.asm and write to instruction file
 with open("test.asm") as asm:
     instructions = asm.readlines()
 
@@ -62,16 +61,15 @@ with open("instruction.mem", 'r+b') as instruction_file:
     for line_num, line in enumerate(instructions):
         line = line.strip()
         
-        # Skip empty lines and comments
+        # Skips empty lines and comments
         if not line or line.startswith("#"):
             continue
         
-        # Clean and parse the instruction
+        # Parse instructions
         line = line.replace(',', ' ').replace('(', ' ').replace(')', ' ')
         parts = [p.lower() for p in line.split()]
         op = parts[0]
         
-        # Convert opcode to 6-bit binary
         opcode_bin = int_to_6bit(opcodes[op])
         
         if op in ["add", "sub", "and", "or", "slt", "nor"]:
