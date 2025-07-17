@@ -6,6 +6,12 @@
 ## Supported Instructions
 | Instruction | Example |
 |----------|----------|
-| Row 1    | Value    |
-| Row 2    | Value    |
-
+| add    |     |
+| and    |     |
+| or     | 
+| nor    | 
+| sub    |
+| slt    |
+| addi   |
+| lw     |
+| sw|
