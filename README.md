@@ -6,7 +6,8 @@
 ## Supported Instructions
 | Instruction | Example |
 |----------|----------|
-| add    |     |
+| add    | add $11, $10, $9
+    |
 | and    |     |
 | or     |     |
 | nor    |      |
